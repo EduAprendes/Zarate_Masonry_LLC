@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zarate Masonry LLC | Chimney Repair & Masonry in Des Moines, WA</title>
+  <meta name="description" content="Chimney repair, restoration and residential masonry in Des Moines, WA. Licensed, bonded and insured. 20+ years of hands-on masonry experience. Free estimates." />
+  <meta property="og:title" content="Zarate Masonry LLC | Chimney Repair & Masonry in Des Moines, WA" />
+  <meta property="og:description" content="Chimney Repair & Restoration Specialist. Licensed · Bonded · Insured. Free estimates." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --ink:#1D211F;
+      --ink-2:#303734;
+      --brick:#B95F3B;
+      --brick-dark:#9E4C2E;
+      --ivory:#F7F3EB;
+      --cream:#FBF8F2;
+      --paper:#FFFDF9;
+      --muted:#6F746F;
+      --line:rgba(29,33,31,.12);
+      --soft:#EEF0EC;
+      --shadow:0 18px 55px rgba(29,33,31,.12);
+      --radius:18px;
+      --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:74px}
+    img{display:block;width:100%}
+    a{color:inherit}
+    button,input,textarea,select{font:inherit}
+    h1,h2,h3,h4,p{margin:0}
+    h1,h2,h3{letter-spacing:-.035em}
+    h1{font-size:clamp(2.55rem,5vw,5.05rem);line-height:.99;font-weight:600;max-width:820px}
+    h2{font-size:clamp(2rem,3.5vw,3.6rem);line-height:1.05;font-weight:600}
+    h3{font-size:1.18rem;font-weight:600}
+    p{color:var(--muted)}
+    .wrap{width:min(var(--max),calc(100% - 32px));margin:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;padding:.48rem .78rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.10);backdrop-filter:blur(14px);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+    .eyebrow.dark{color:var(--ink);background:#fff;border-color:var(--line)}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--brick)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;text-decoration:none;border:0;border-radius:12px;padding:.95rem 1.2rem;font-weight:700;cursor:pointer;transition:.2s ease;min-height:48px}
+    .btn-primary{background:var(--brick);color:#fff;box-shadow:0 10px 30px rgba(185,95,59,.23)}
+    .btn-primary:hover{background:var(--brick-dark);transform:translateY(-1px)}
+    .btn-secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.26);backdrop-filter:blur(14px)}
+    .btn-secondary:hover{background:rgba(255,255,255,.18)}
+    .btn-light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+    .btn-light:hover{border-color:rgba(29,33,31,.25);transform:translateY(-1px)}
+    .icon{width:18px;height:18px;flex:0 0 auto}
+    .glass{background:rgba(247,243,235,.90);border:1px solid rgba(255,255,255,.42);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+
+    /* NAV */
+    .nav-shell{position:fixed;z-index:100;left:0;right:0;top:0;padding:14px 0;transition:.25s ease}
+    .nav-shell.scrolled{background:rgba(247,243,235,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:8px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;border-radius:16px;padding:10px 12px 10px 16px;color:#fff;transition:.25s ease}
+    .nav-shell:not(.scrolled) .nav{background:rgba(18,22,20,.26);border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(12px)}
+    .nav-shell.scrolled .nav{color:var(--ink);background:transparent}
+    .brand{text-decoration:none;font-weight:700;letter-spacing:-.025em;font-size:1.02rem;white-space:nowrap}
+    .brand span{color:var(--brick)}
+    .nav-links{display:flex;align-items:center;gap:1.4rem}
+    .nav-links a{text-decoration:none;font-size:.9rem;font-weight:600;opacity:.92}
+    .nav-actions{display:flex;align-items:center;gap:.65rem}
+    .phone-top{text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap}
+    .nav-shell.scrolled .btn-secondary{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .menu-btn{display:none;background:transparent;border:0;color:inherit;padding:.55rem}
+    .mobile-menu{display:none}
+
+    /* HERO */
+    /* ===== HERO: custom project-intake composition ===== */
+    .hero{position:relative;min-height:100svh;overflow:hidden;background:url('images/hero-worker-chimney.jpg') 58% 42%/cover no-repeat;color:#fff}
+    .hero::before{content:"";position:absolute;inset:0;background:
+      linear-gradient(90deg,rgba(14,17,15,.88) 0%,rgba(14,17,15,.72) 30%,rgba(14,17,15,.34) 58%,rgba(14,17,15,.14) 78%,rgba(14,17,15,.10) 100%),
+      linear-gradient(0deg,rgba(14,17,15,.72) 0%,rgba(14,17,15,.12) 48%,rgba(14,17,15,.20) 100%)}
+    .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 48%,rgba(185,95,59,.10),transparent 34%);pointer-events:none}
+    .hero-stage{position:relative;z-index:2;width:min(var(--max),calc(100% - 32px));min-height:100svh;margin:0 auto;padding:128px 0 34px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(370px,.85fr);gap:28px;align-items:end}
+    .hero-copy{padding:0 0 28px;max-width:720px}
+    .hero-location{display:inline-flex;align-items:center;gap:.55rem;padding:.48rem .72rem;border-radius:999px;background:rgba(247,243,235,.11);border:1px solid rgba(255,255,255,.20);backdrop-filter:blur(10px);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .hero-location::before{content:"";width:7px;height:7px;border-radius:50%;background:#F0B095;box-shadow:0 0 0 5px rgba(240,176,149,.10)}
+    .hero h1{margin-top:18px;max-width:690px;font-size:clamp(2.85rem,5.1vw,5.65rem);line-height:.96;font-weight:600;letter-spacing:-.055em;text-wrap:balance}
+    .hero h1 .accent{color:#F0B095}
+    .hero-sub{margin-top:18px;max-width:590px;color:rgba(255,255,255,.84);font-size:clamp(1rem,1.35vw,1.13rem)}
+    .hero-trustline{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.90);font-size:.9rem;font-weight:600}
+    .hero-trustline span{display:inline-flex;align-items:center;gap:7px}.hero-trustline i{font-style:normal;color:#F0B095}
+    .hero-call{display:inline-flex;margin-top:20px;color:#fff;text-decoration:none;font-size:.95rem;font-weight:700;border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:4px}.hero-call:hover{border-color:#fff}
+
+    .intake-dock{position:relative;background:rgba(247,243,235,.94);color:var(--ink);border:1px solid rgba(255,255,255,.42);backdrop-filter:blur(18px);box-shadow:0 24px 70px rgba(0,0,0,.22);border-radius:24px;overflow:hidden}
+    .intake-top{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:18px 20px 14px;border-bottom:1px solid rgba(29,33,31,.10)}
+    .intake-kicker{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;color:var(--brick)}
+    .intake-top h2{font-size:1.35rem;letter-spacing:-.035em;margin-top:3px}
+    .intake-status{display:flex;align-items:center;gap:7px;font-size:.76rem;color:var(--muted);font-weight:700}.intake-status::before{content:"";width:8px;height:8px;border-radius:50%;background:#64A36B;box-shadow:0 0 0 5px rgba(100,163,107,.12)}
+    .service-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:12px 14px 0}.service-strip span{padding:8px 7px;text-align:center;border-radius:10px;background:#EEEAE2;font-size:.72rem;font-weight:700;color:#5F655F}.service-strip span:first-child{background:var(--ink);color:#fff}
+    .intake-form{padding:16px 18px 18px}.intake-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.intake-field{display:grid;gap:6px}.intake-field.full{grid-column:1/-1}.intake-field label{font-size:.73rem;font-weight:800;color:#555C57}.intake-field input,.intake-field select,.intake-field textarea{width:100%;border:1px solid rgba(29,33,31,.13);background:#FFFDF9;border-radius:12px;padding:12px 12px;color:var(--ink);outline:none}.intake-field textarea{min-height:82px;resize:vertical}.intake-field input:focus,.intake-field select:focus,.intake-field textarea:focus{border-color:rgba(185,95,59,.65);box-shadow:0 0 0 3px rgba(185,95,59,.10)}
+    .intake-submit{width:100%;margin-top:12px;display:flex;align-items:center;justify-content:space-between;background:var(--brick);color:#fff;border:0;border-radius:12px;padding:14px 16px;font-weight:800;cursor:pointer}.intake-submit:hover{background:var(--brick-dark)}
+    .intake-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:10px;color:var(--muted);font-size:.71rem}.intake-meta a{font-weight:800;color:var(--ink);text-decoration:none}
+    .hero-rail{position:absolute;left:0;right:0;bottom:0;border-top:1px solid rgba(255,255,255,.15);background:rgba(18,21,19,.28);backdrop-filter:blur(12px)}
+    .hero-rail-inner{width:min(var(--max),calc(100% - 32px));margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0}.rail-item{padding:12px 18px;border-right:1px solid rgba(255,255,255,.14)}.rail-item:first-child{padding-left:0}.rail-item:last-child{border-right:0}.rail-k{font-size:.66rem;text-transform:uppercase;letter-spacing:.10em;color:rgba(255,255,255,.58);font-weight:800}.rail-v{margin-top:2px;font-size:.9rem;font-weight:700;color:#fff}
+    .trustbar{position:relative;z-index:4;margin-top:-18px}
+    .trustbar-inner{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 15px 42px rgba(29,33,31,.08);padding:20px 22px;display:grid;grid-template-columns:repeat(4,1fr)}
+    .metric{padding:0 22px;border-right:1px solid var(--line)}
+    .metric:first-child{padding-left:4px}.metric:last-child{border-right:0;padding-right:4px}
+    .metric .k{font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+    .metric .v{font-size:1.18rem;font-weight:700;margin-top:.25rem;letter-spacing:-.02em}
+
+    /* SECTIONS */
+    section.content{padding:92px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:38px}
+    .section-head .copy{max-width:710px}
+    .section-head p{max-width:580px;margin-top:.9rem;font-size:1.02rem}
+    .section-kicker{color:var(--brick);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;margin-bottom:.75rem}
+
+    /* SERVICE SELECTOR */
+    .services-shell{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px;align-items:stretch}
+    .service-tabs{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .service-tab{width:100%;display:grid;grid-template-columns:48px 1fr 28px;align-items:center;gap:10px;border:0;border-bottom:1px solid var(--line);background:transparent;text-align:left;padding:17px 18px;cursor:pointer;color:var(--ink);transition:.18s ease}
+    .service-tab:last-child{border-bottom:0}.service-tab:hover{background:#F6F4EF}.service-tab.active{background:var(--ink);color:#fff}
+    .service-tab .num{font-size:.78rem;font-weight:800;opacity:.55}.service-tab .name{font-weight:650}.service-tab .arrow{font-size:1.1rem;opacity:.55}
+    .service-visual{position:relative;border-radius:18px;overflow:hidden;min-height:520px;background:#ddd}
+    .service-visual img{position:absolute;inset:0;height:100%;object-fit:cover;transition:.25s ease}
+    .service-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,24,22,.75),rgba(20,24,22,.05) 60%)}
+    .service-caption{position:absolute;z-index:2;left:22px;right:22px;bottom:22px;color:#fff;display:flex;justify-content:space-between;gap:22px;align-items:end}
+    .service-caption h3{font-size:1.45rem}.service-caption p{color:rgba(255,255,255,.76);max-width:470px;margin-top:.45rem}
+    .mini-badge{display:inline-flex;padding:.42rem .62rem;border-radius:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-size:.75rem;font-weight:700;backdrop-filter:blur(10px)}
+
+    /* FEATURE */
+    .feature{background:var(--ink);color:#fff;border-radius:26px;padding:34px;display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;overflow:hidden}
+    .feature p{color:rgba(255,255,255,.72);margin-top:.8rem;max-width:600px}
+    .feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:1.6rem}
+    .feature-item{display:flex;align-items:center;gap:.55rem;padding:.85rem .95rem;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.035);font-size:.9rem;font-weight:600}
+    .feature-image{height:100%;min-height:420px;border-radius:18px;overflow:hidden;position:relative}
+    .feature-image img{height:100%;object-fit:cover}
+    .feature-image .floating-tag{position:absolute;left:16px;bottom:16px;background:rgba(247,243,235,.92);color:var(--ink);padding:.75rem .9rem;border-radius:12px;font-size:.82rem;font-weight:700;box-shadow:var(--shadow)}
+
+    /* PROCESS */
+    .process-line{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+    .step{padding:22px 24px 10px 0;position:relative}
+    .step::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--brick)}
+    .step .n{font-size:.72rem;color:var(--brick);font-weight:800;letter-spacing:.1em;margin-bottom:.55rem}.step p{font-size:.92rem;margin-top:.35rem}
+
+    /* GALLERY */
+    .gallery-grid{display:grid;grid-template-columns:1.25fr .8fr .8fr;grid-template-rows:280px 280px;gap:12px}
+    .g{position:relative;border-radius:16px;overflow:hidden;background:#ddd}.g img{height:100%;object-fit:cover;transition:transform .35s ease}.g:hover img{transform:scale(1.025)}
+    .g.big{grid-row:1/3}.g.wide{grid-column:2/4}
+    .tag{position:absolute;left:12px;bottom:12px;background:rgba(247,243,235,.93);padding:.48rem .65rem;border-radius:9px;font-size:.74rem;font-weight:700;box-shadow:0 10px 25px rgba(29,33,31,.12)}
+    .real-work{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 22px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+    .real-work strong{font-size:1.12rem}.real-work p{font-size:.9rem}
+
+    /* ABOUT */
+    .about{position:relative;min-height:620px;border-radius:24px;overflow:hidden;background:url('images/jose-working.jpg') center 55%/cover no-repeat}
+    .about::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,19,17,.08),rgba(16,19,17,.58))}
+    .about-card{position:absolute;z-index:2;right:28px;bottom:28px;width:min(430px,calc(100% - 56px));border-radius:20px;padding:24px;color:var(--ink)}
+    .about-card h3{font-size:1.65rem;margin-top:.35rem}.about-card p{margin-top:.7rem}.quote{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem;color:var(--ink)!important}
+
+    /* LICENSE */
+    .trust-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}
+    .trust-intro{background:var(--brick);color:#fff;border-radius:20px;padding:28px}.trust-intro p{color:rgba(255,255,255,.78);margin-top:.8rem}.trust-intro .btn{margin-top:1.5rem;background:#fff;color:var(--ink)}
+    .facts{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:14px 20px}
+    .fact{display:grid;grid-template-columns:1fr auto;gap:20px;padding:17px 2px;border-bottom:1px solid var(--line);align-items:center}.fact:last-child{border-bottom:0}.fact .label{color:var(--muted);font-size:.86rem}.fact .value{font-weight:700;text-align:right}
+
+    /* CONTACT */
+    .contact-shell{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}
+    .contact-info{background:var(--ink);color:#fff;border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;min-height:520px}.contact-info p{color:rgba(255,255,255,.72);margin-top:.7rem}.contact-links{display:grid;gap:9px;margin-top:2rem}.contact-link{display:flex;align-items:center;justify-content:space-between;gap:15px;text-decoration:none;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:.85rem .9rem;background:rgba(255,255,255,.035)}
+    .contact-link span:last-child{opacity:.55}
+    .form-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.78rem;font-weight:700;color:var(--ink)}
+    .field input,.field textarea,.field select{width:100%;border:1px solid var(--line);background:#FAF9F6;border-radius:11px;padding:.9rem;color:var(--ink);outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--brick);box-shadow:0 0 0 3px rgba(185,95,59,.10)}.field textarea{min-height:108px;resize:vertical}
+    .form-card .btn{margin-top:14px;width:100%}
+    .form-note{font-size:.76rem;margin-top:.8rem;text-align:center}
+    .success{display:none;margin-top:10px;padding:.8rem;border-radius:10px;background:#EDF6F0;color:#285B40;font-weight:600;font-size:.88rem}
+
+    footer{padding:30px 0 100px}.footer-row{display:flex;justify-content:space-between;gap:24px;padding-top:24px;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+
+    /* STICKY */
+    .sticky-desktop{position:fixed;z-index:110;right:20px;bottom:20px;display:flex;flex-direction:column;align-items:flex-end;gap:9px}.sticky-menu{display:none;gap:8px;flex-direction:column}.sticky-desktop.open .sticky-menu{display:flex}.sticky-menu a{background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:12px;padding:.75rem .9rem;text-decoration:none;font-weight:700;font-size:.85rem;min-width:180px}.sticky-toggle{border:0;border-radius:14px;background:var(--ink);color:#fff;padding:.9rem 1.05rem;font-weight:700;box-shadow:var(--shadow);cursor:pointer}.mobile-sticky{display:none}
+
+    @media(max-width:1000px){
+      .nav-links,.phone-top{display:none}.menu-btn{display:block}.hero-inner{grid-template-columns:1fr}.hero-panel{max-width:380px}.services-shell,.feature,.trust-panel,.contact-shell{grid-template-columns:1fr}.service-visual{min-height:420px}.feature-image{min-height:380px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:320px 240px 240px}.g.big{grid-column:1/3;grid-row:auto}.g.wide{grid-column:1/3}.process-line{grid-template-columns:1fr 1fr;row-gap:30px}.trustbar-inner{grid-template-columns:1fr 1fr;gap:18px}.metric{border-right:0;padding:0}.metric:nth-child(odd){border-right:1px solid var(--line)}
+    }
+    @media(max-width:720px){
+      body{font-size:17px}.wrap{width:min(100% - 22px,var(--max))}.nav-shell{padding:9px 0}.nav{padding:8px 10px 8px 12px}.nav-actions .btn{display:none}.mobile-menu{position:fixed;z-index:99;left:11px;right:11px;top:68px;background:rgba(247,243,235,.97);border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:var(--shadow)}.mobile-menu.open{display:grid}.mobile-menu a{text-decoration:none;padding:.9rem 1rem;border-bottom:1px solid var(--line);font-weight:650}.mobile-menu a:last-child{border-bottom:0;color:var(--brick)}
+      .hero{min-height:100svh;background-position:58% center;align-items:flex-end}.hero::before{background:linear-gradient(0deg,rgba(13,16,14,.82) 0%,rgba(13,16,14,.48) 58%,rgba(13,16,14,.13) 100%)}.hero-inner{padding:118px 0 24px;gap:16px}.hero-copy h1{font-size:clamp(2.5rem,11vw,4rem)}.hero-copy .sub{font-size:1rem}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn{padding:.9rem .75rem}.hero-panel{padding:14px;border-radius:16px;max-width:none}.panel-big{font-size:1.65rem}.focus-list{grid-template-columns:1fr 1fr}.hero-bottom-chip{display:none}
+      .trustbar{margin-top:10px}.trustbar-inner{border-radius:16px;padding:16px;gap:16px}.metric .v{font-size:1rem}.metric .k{font-size:.66rem}
+      section.content{padding:68px 0}.section-head{display:block;margin-bottom:26px}.section-head p{font-size:.98rem}.services-shell{gap:12px}.service-tabs{border-radius:16px}.service-tab{grid-template-columns:40px 1fr 24px;padding:15px}.service-visual{min-height:360px}.service-caption{left:16px;right:16px;bottom:16px;display:block}.service-caption .mini-badge{margin-top:.8rem}
+      .feature{padding:20px;border-radius:20px;gap:20px}.feature-list{grid-template-columns:1fr 1fr}.feature-item{padding:.8rem;font-size:.82rem}.feature-image{min-height:330px}
+      .process-line{grid-template-columns:1fr;border-left:1px solid var(--line);border-top:0;margin-left:4px}.step{padding:0 0 24px 24px}.step::before{top:6px;left:-5px}
+      .gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}.g,.g.big,.g.wide{grid-column:auto;grid-row:auto;height:260px}.g.big{height:360px}.real-work{align-items:flex-start;flex-direction:column}
+      .about{min-height:620px;background-position:62% center}.about-card{right:12px;left:12px;bottom:12px;width:auto;padding:18px}.about-card h3{font-size:1.4rem}
+      .trust-panel{gap:12px}.trust-intro,.facts,.contact-info,.form-card{border-radius:18px;padding:20px}.fact{grid-template-columns:1fr}.fact .value{text-align:left}.contact-info{min-height:auto}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-row{flex-direction:column}
+      .sticky-desktop{display:none}.mobile-sticky{display:grid;grid-template-columns:1fr 1fr 1.15fr;position:fixed;z-index:120;left:0;right:0;bottom:0;background:rgba(247,243,235,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:7px}.mobile-sticky a{text-decoration:none;border-radius:10px;padding:.8rem .45rem;text-align:center;font-size:.78rem;font-weight:800;border:1px solid var(--line)}.mobile-sticky .call{background:#fff}.mobile-sticky .wa{background:var(--ink);color:#fff;border-color:var(--ink)}.mobile-sticky .estimate{background:var(--brick);color:#fff;border-color:var(--brick)}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  
+    @media(max-width:900px){
+      .hero-stage{grid-template-columns:1fr;align-items:end;padding:118px 0 98px;gap:22px}.hero-copy{padding-bottom:0}.intake-dock{max-width:560px}.hero-rail-inner{grid-template-columns:1fr 1fr}.rail-item{padding:10px 12px}.rail-item:nth-child(2){border-right:0}.hero{background-position:62% 40%}
+    }
+    @media(max-width:640px){
+      .hero::before{background:linear-gradient(0deg,rgba(13,16,14,.90) 0%,rgba(13,16,14,.74) 47%,rgba(13,16,14,.28) 78%,rgba(13,16,14,.18) 100%)}
+      .hero-stage{width:min(100% - 22px,var(--max));padding:104px 0 114px}.hero h1{font-size:clamp(2.35rem,12vw,3.8rem);max-width:10ch}.hero-sub{font-size:.98rem;max-width:34ch}.hero-trustline{font-size:.82rem;gap:7px 13px}.intake-dock{border-radius:18px}.intake-grid{grid-template-columns:1fr}.intake-field.full{grid-column:auto}.service-strip{grid-template-columns:repeat(2,1fr)}.hero-rail-inner{grid-template-columns:1fr 1fr}.hero-rail{background:rgba(18,21,19,.58)}.rail-item:nth-child(3),.rail-item:nth-child(4){display:none}.intake-meta{font-size:.68rem}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-shell" id="navShell">
+    <div class="wrap nav">
+      <a class="brand" href="#top">Zarate <span>Masonry</span> LLC</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="phone-top" href="tel:+12534558032">(253) 455-8032</a>
+        <a class="btn btn-secondary" href="#contact">Free Estimate</a>
+        <button class="menu-btn" aria-label="Open menu" id="menuBtn">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a><a href="tel:+12534558032">Call (253) 455-8032</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Zarate Masonry chimney repair in Des Moines, Washington">
+      <div class="hero-stage">
+        <div class="hero-copy">
+          <div class="hero-location">Des Moines, WA</div>
+          <h1>Chimney Repair &amp; Masonry <span class="accent">Built for Northwest Homes.</span></h1>
+          <p class="hero-sub">Residential chimney repair, restoration, brick, stone and block work with 20+ years of hands-on masonry experience.</p>
+          <div class="hero-trustline"><span><i>✓</i> Licensed</span><span><i>✓</i> Bonded</span><span><i>✓</i> Insured</span><span><i>✓</i> Free Estimates</span></div>
+          <a class="hero-call" href="tel:+12534558032">Prefer to talk? Call (253) 455-8032 →</a>
+        </div>
+
+        <aside class="intake-dock" aria-label="Request a free masonry estimate">
+          <div class="intake-top">
+            <div><div class="intake-kicker">Project Intake</div><h2>What needs to be fixed?</h2></div>
+            <div class="intake-status">Free Estimate</div>
+          </div>
+          <div class="service-strip" aria-hidden="true"><span>Chimney</span><span>Brick</span><span>Stone</span><span>Block</span></div>
+          <form class="intake-form" id="heroEstimateForm">
+            <div class="intake-grid">
+              <div class="intake-field"><label for="hname">Name</label><input id="hname" name="name" autocomplete="name" required placeholder="Your name" /></div>
+              <div class="intake-field"><label for="hphone">Phone</label><input id="hphone" name="phone" type="tel" autocomplete="tel" required placeholder="(253) 000-0000" /></div>
+              <div class="intake-field full"><label for="hservice">What do you need help with?</label><select id="hservice" name="service"><option>Chimney Repair</option><option>Chimney Restoration</option><option>Crown / Rain Cap</option><option>Flashing</option><option>Firebox Repair</option><option>Brick / Stone / Block</option><option>Other Masonry</option></select></div>
+              <div class="intake-field full"><label for="hmessage">Tell us what you’re seeing</label><textarea id="hmessage" name="message" placeholder="Cracked brick, leak, loose mortar, damaged crown…"></textarea></div>
+            </div>
+            <button class="intake-submit" type="submit"><span>Request Free Estimate</span><span>↗</span></button>
+            <div class="intake-meta"><span>Licensed · Bonded · Insured</span><a href="https://wa.me/12534558032" target="_blank" rel="noopener">WhatsApp</a></div>
+          </form>
+        </aside>
+      </div>
+      <div class="hero-rail" aria-label="Business trust facts"><div class="hero-rail-inner"><div class="rail-item"><div class="rail-k">Specialty</div><div class="rail-v">Chimney Repair &amp; Restoration</div></div><div class="rail-item"><div class="rail-k">Experience</div><div class="rail-v">20+ Years</div></div><div class="rail-item"><div class="rail-k">WA License</div><div class="rail-v">ZARATML791NF</div></div><div class="rail-item"><div class="rail-k">Coverage</div><div class="rail-v">Up to $1M</div></div></div></div>
+    </section>
+
+    <div class="trustbar">
+      <div class="wrap trustbar-inner">
+        <div class="metric"><div class="k">Experience</div><div class="v">20+ Years</div></div>
+        <div class="metric"><div class="k">WA License</div><div class="v">ZARATML791NF</div></div>
+        <div class="metric"><div class="k">Insurance</div><div class="v">Up to $1M</div></div>
+        <div class="metric"><div class="k">Estimates</div><div class="v">Free</div></div>
+      </div>
+    </div>
+
+    <section class="content" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="copy"><div class="section-kicker">What we do</div><h2>Residential masonry, made easy to understand.</h2><p>Choose a service to see the kind of work Zarate Masonry handles most often.</p></div>
+          <a class="btn btn-light" href="#contact">Talk about your project</a>
+        </div>
+        <div class="services-shell">
+          <div class="service-tabs" role="tablist" aria-label="Masonry services">
+            <button class="service-tab active" data-img="images/chimney-finished.jpg" data-title="Chimney Repair" data-copy="Brick or stone chimney repair and rebuild work focused on restoring strength, function and weather protection."><span class="num">01</span><span class="name">Chimney Repair</span><span class="arrow">↗</span></button>
+            <button class="service-tab" data-img="images/chimney-cap.jpg" data-title="Chimney Restoration" data-copy="Crown work, rain caps, mortar repair and restoration details that help protect the chimney from Northwest weather."><span class="num">02</span><span class="name">Chimney Restoration</span><span class="arrow">↗</span></button>
+            <button class="service-tab" data-img="images/firebox.jpg" data-title="Firebox Repair" data-copy="Firebox repair or rebuild work for the interior area where the fire burns."><span class="num">03</span><span class="name">Firebox Repair</span><span class="arrow">↗</span></button>
+            <button class="service-tab" data-img="images/chimney-flashing.jpg" data-title="Flashing & Rain Caps" data-copy="Flashing fixes or installation, chimney crowns and rain-cap related work where water intrusion is a concern."><span class="num">04</span><span class="name">Flashing & Rain Caps</span><span class="arrow">↗</span></button>
+            <button class="service-tab" data-img="images/stone-work.jpg" data-title="Brick & Stone Work" data-copy="Residential brick, stone and block work including walls, pillars, stairs, porches and new masonry projects."><span class="num">05</span><span class="name">Brick & Stone Work</span><span class="arrow">↗</span></button>
+          </div>
+          <div class="service-visual" aria-live="polite">
+            <img id="serviceImage" src="images/chimney-finished.jpg" alt="Finished brick chimney masonry project" />
+            <div class="service-caption"><div><h3 id="serviceTitle">Chimney Repair</h3><p id="serviceCopy">Brick or stone chimney repair and rebuild work focused on restoring strength, function and weather protection.</p></div><span class="mini-badge">Residential</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" style="padding-top:0">
+      <div class="wrap feature">
+        <div>
+          <div class="section-kicker" style="color:#F3B79E">Primary service</div>
+          <h2>Chimney Repair & Restoration</h2>
+          <p>Zarate Masonry specializes in the repair and restoration details homeowners actually need — from damaged mortar and crowns to flashing, flue liners and firebox work.</p>
+          <div class="feature-list">
+            <div class="feature-item">✓ Repair</div><div class="feature-item">✓ Rebuild</div><div class="feature-item">✓ Repointing</div><div class="feature-item">✓ Crown Repair</div><div class="feature-item">✓ Rain Caps</div><div class="feature-item">✓ Flashing</div><div class="feature-item">✓ Flue Liners</div><div class="feature-item">✓ Firebox</div>
+          </div>
+          <a class="btn btn-primary" href="#contact" style="margin-top:1.5rem">Get a Free Chimney Estimate</a>
+        </div>
+        <div class="feature-image"><img src="images/chimney-cap.jpg" alt="Brick chimney crown and cap detail" /><div class="floating-tag">Chimney crown + cap work</div></div>
+      </div>
+    </section>
+
+    <section class="content" style="padding-top:16px">
+      <div class="wrap">
+        <div class="section-head"><div class="copy"><div class="section-kicker">Simple process</div><h2>From the first message to the finished masonry.</h2></div></div>
+        <div class="process-line">
+          <div class="step"><div class="n">01</div><h3>Tell Us What You Need</h3><p>Call, message or request a free estimate.</p></div>
+          <div class="step"><div class="n">02</div><h3>We Inspect the Project</h3><p>We review the condition and the masonry work involved.</p></div>
+          <div class="step"><div class="n">03</div><h3>You Receive a Free Estimate</h3><p>Clear next steps before the work begins.</p></div>
+          <div class="step"><div class="n">04</div><h3>We Complete the Masonry Work</h3><p>Repair, rebuild or restoration based on the project.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="projects">
+      <div class="wrap">
+        <div class="section-head"><div class="copy"><div class="section-kicker">Recent work</div><h2>Real work. Real masonry. No stock photos.</h2><p>These images show actual masonry work from Zarate Masonry projects.</p></div></div>
+        <div class="gallery-grid">
+          <div class="g big"><img src="images/hero-worker-chimney.jpg" alt="Brick chimney repair with worker on scaffolding" /><span class="tag">Chimney Repair</span></div>
+          <div class="g"><img src="images/chimney-flashing.jpg" alt="Brick chimney flashing repair" /><span class="tag">Flashing</span></div>
+          <div class="g"><img src="images/chimney-cap.jpg" alt="Chimney crown and cap installation" /><span class="tag">Crown + Cap</span></div>
+          <div class="g wide"><img src="images/stone-fireplace.jpg" alt="Stone fireplace surround" /><span class="tag">Stone Work</span></div>
+        </div>
+        <div class="real-work"><div><strong>Built with brick, stone and block.</strong><p>No lifestyle filler. Just the masonry work homeowners are hiring Zarate Masonry to do.</p></div><a class="btn btn-light" href="#contact">Request an estimate</a></div>
+      </div>
+    </section>
+
+    <section class="content" id="about" style="padding-top:0">
+      <div class="wrap">
+        <div class="about">
+          <div class="about-card glass">
+            <div class="panel-label">Owner / Mason</div>
+            <h3>Jose Salas</h3>
+            <p>20+ years of hands-on masonry experience.</p>
+            <p class="quote">“When you call Zarate Masonry, you're speaking directly with the person doing the work.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" style="padding-top:0">
+      <div class="wrap trust-panel">
+        <div class="trust-intro">
+          <div class="section-kicker" style="color:#FFE1D4">Trust & credentials</div>
+          <h2>Licensed. Bonded. Insured.</h2>
+          <p>Professional credentials matter when the work is attached to your home.</p>
+          <a class="btn" href="https://secure.lni.wa.gov/verify/" target="_blank" rel="noopener">Verify WA License</a>
+        </div>
+        <div class="facts">
+          <div class="fact"><div><div class="label">WA Contractor License</div></div><div class="value">ZARATML791NF</div></div>
+          <div class="fact"><div><div class="label">License Status</div></div><div class="value">Active · verified Aug 2026</div></div>
+          <div class="fact"><div><div class="label">Insurance</div></div><div class="value">Up to $1,000,000</div></div>
+          <div class="fact"><div><div class="label">Bond</div></div><div class="value">$6,000</div></div>
+          <div class="fact"><div><div class="label">Business Base</div></div><div class="value">Des Moines, WA</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="contact" style="padding-top:0">
+      <div class="wrap contact-shell">
+        <div class="contact-info">
+          <div><div class="section-kicker" style="color:#F3B79E">Free estimate</div><h2>Need Your Chimney Repaired?</h2><p>Tell us what you're seeing and we'll help you figure out the next step.</p></div>
+          <div class="contact-links">
+            <a class="contact-link" href="tel:+12534558032"><span>Call · (253) 455-8032</span><span>↗</span></a>
+            <a class="contact-link" href="https://wa.me/12534558032" target="_blank" rel="noopener"><span>WhatsApp</span><span>↗</span></a>
+            <a class="contact-link" href="mailto:jose1775salas@gmail.com"><span>Email</span><span>↗</span></a>
+            <div class="contact-link"><span>Des Moines, WA</span><span>●</span></div>
+          </div>
+        </div>
+        <div class="form-card">
+          <form id="estimateForm">
+            <div class="form-grid">
+              <div class="field"><label for="name">Name</label><input id="name" name="name" required /></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+              <div class="field"><label for="service">Service Needed</label><select id="service" name="service"><option>Chimney Repair</option><option>Chimney Restoration</option><option>Firebox Repair</option><option>Flashing / Rain Cap</option><option>Brick / Stone / Block</option><option>Other Masonry</option></select></div>
+              <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you need help with"></textarea></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Request Free Estimate</button>
+            <div class="success" id="success">Thanks — your request is ready to be connected to your preferred form backend.</div>
+            <p class="form-note">Form submission still needs to be connected to your backend or form service before launch.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row"><div><strong>Zarate Masonry LLC</strong><br />Chimney Repair & Restoration Specialist · Des Moines, WA</div><div>WA License ZARATML791NF · Licensed · Bonded · Insured</div></div>
+  </footer>
+
+  <div class="sticky-desktop" id="sticky">
+    <div class="sticky-menu"><a href="tel:+12534558032">Call (253) 455-8032</a><a href="https://wa.me/12534558032" target="_blank" rel="noopener">WhatsApp</a><a href="#contact">Free Estimate</a></div>
+    <button class="sticky-toggle" id="stickyToggle">Contact Now</button>
+  </div>
+  <div class="mobile-sticky"><a class="call" href="tel:+12534558032">Call Now</a><a class="wa" href="https://wa.me/12534558032" target="_blank" rel="noopener">WhatsApp</a><a class="estimate" href="#contact">Free Estimate</a></div>
+
+  <script>
+    const navShell=document.getElementById('navShell');
+    const onScroll=()=>navShell.classList.toggle('scrolled',window.scrollY>30);
+    onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+    const menuBtn=document.getElementById('menuBtn');
+    const mobileMenu=document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
+    mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+
+    const tabs=[...document.querySelectorAll('.service-tab')];
+    const image=document.getElementById('serviceImage');
+    const title=document.getElementById('serviceTitle');
+    const copy=document.getElementById('serviceCopy');
+    tabs.forEach(tab=>tab.addEventListener('click',()=>{
+      tabs.forEach(t=>t.classList.remove('active'));tab.classList.add('active');
+      image.style.opacity='.2';
+      setTimeout(()=>{image.src=tab.dataset.img;image.alt=tab.dataset.title;title.textContent=tab.dataset.title;copy.textContent=tab.dataset.copy;image.style.opacity='1';},120);
+    }));
+
+    document.getElementById('stickyToggle').addEventListener('click',()=>document.getElementById('sticky').classList.toggle('open'));
+
+    document.getElementById('estimateForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      document.getElementById('success').style.display='block';
+    });
+
+    const heroForm=document.getElementById('heroEstimateForm');
+    if(heroForm){heroForm.addEventListener('submit',e=>{e.preventDefault();const b=heroForm.querySelector('.intake-submit');const old=b.innerHTML;b.innerHTML='<span>Request received</span><span>✓</span>';setTimeout(()=>b.innerHTML=old,2500);});}
+  </script>
+</body>
+</html>
