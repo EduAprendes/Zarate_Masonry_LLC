@@ -656,7 +656,7 @@ export default function ZarateMasonrySite() {
                 <p>{t.mat_block_d}</p>
               </div>
             </div>
-            <div className="mat-card solid">
+            <div className="mat-card" style={{ backgroundImage: "url('/images/materials-stone.jpg')" }}>
               <div className="mat-inner">
                 <h3>{t.mat_stone_t}</h3>
                 <p>{t.mat_stone_d}</p>
