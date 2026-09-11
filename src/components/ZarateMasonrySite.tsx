@@ -467,7 +467,9 @@ export default function ZarateMasonrySite() {
               </span>
             </div>
             <a href="tel:+12534558032" className="hero-talk">
-              <span>{t.hero_prefer}</span> (253) 455-8032 <ArrowRightIcon />
+              <span className="hero-talk-label">{t.hero_prefer}</span>
+              <span className="hero-talk-number">(253) 455-8032</span>
+              <ArrowRightIcon />
             </a>
           </div>
           <div className="hero-stats">
